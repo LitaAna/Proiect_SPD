@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="O selecție de obiecte tech pentru fiecare zi. Catalog demonstrativ cu un cache distribuit Redis.">
+  <title>FORMA — Tehnologie cu rost</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/project.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <div class="announcement">Obiecte bine alese, pentru fiecare zi. <span>DESCOPERĂ COLECȚIA FORMA</span></div>
+  <header class="header wrap">
+    <a class="logo" href="/" aria-label="Forma, pagina principală">forma<span>®</span></a>
+    <nav aria-label="Navigare principală"><a href="#collection" class="active">Colecția</a></nav>
+    <a class="header-link project-link" href="/proiect">Panou proiect ↗</a>
+  </header>
+  <main>
+    <section class="hero wrap">
+      <div class="hero-copy"><div class="eyebrow"><span class="dot"></span> OBIECTE BINE ALESE. EXPERIENȚE MAI RAPIDE.</div>
+        <h1>Mai puțin zgomot.<br>Mai mult <em>rost.</em></h1>
+        <p>Tehnologie care își găsește locul în viața ta.<br>Descoperă o colecție gândită pentru fiecare zi.</p>
+        <a class="button dark" href="#collection">Descoperă colecția <span>↗</span></a>
+        <div class="hero-note"><span>01 — 08</span> O selecție mică. Posibilități mari.</div>
+      </div>
+      <div class="hero-art"><span class="vertical-label">SUNET BUN. GÂNDURI LIMPEZI.</span><img src="/static/images/headphones.jpg" alt="Căști over-ear, fotografie ilustrativă" fetchpriority="high"><div class="hero-product"><div><small>ÎN CENTRUL ATENȚIEI</small><strong>Studio One</strong></div><button class="circle" data-product="1" aria-label="Vezi căștile Studio One">↗</button></div><span class="image-counter">FORMA / AUDIO COLLECTION</span></div>
+    </section>
+    <section class="benefits wrap" aria-label="Despre colecție"><div><span>↗</span> Design cu intenție</div><div><span>◎</span> Tehnologie pentru fiecare zi</div><div><span>⚡</span> O experiență mai rapidă</div></section>
+    <section id="collection" class="collection wrap">
+      <div class="section-top"><div><div class="eyebrow">COLECȚIA FORMA / 2026</div><h2>Alege ce ți se potrivește<span>.</span></h2></div><span id="product-count" class="muted">Se încarcă…</span></div>
+      <div class="toolbar"><div class="filters" role="group" aria-label="Filtrează după categorie"><button class="selected" data-category="Toate">Toate</button><button data-category="Audio">Audio</button><button data-category="Workspace">Workspace</button><button data-category="Foto">Foto</button><button data-category="Lifestyle">Lifestyle</button></div><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Caută în colecție" aria-label="Caută produse"></label></div>
+      <div id="catalog-status" role="status" class="catalog-status">Pregătim colecția…</div><div id="product-grid" class="product-grid"></div>
+    </section>
+
+  </main>
+  <footer class="wrap"><a class="logo" href="/">forma<span>®</span></a><span>Obiecte cu rost. Pentru fiecare zi.</span><span>Proiect individual / 2026</span></footer>
+  <dialog id="product-dialog"><button id="dialog-close" class="dialog-close" aria-label="Închide detaliile">×</button><div id="product-detail"></div></dialog>
+  <div id="toast" class="toast" role="status" hidden></div>
+</body>
+</html>
